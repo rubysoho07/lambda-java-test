@@ -1,3 +1,6 @@
 # IntelliJ
 .idea/
 *.iml
+
+# AWS-SAM
+.aws-sam/
