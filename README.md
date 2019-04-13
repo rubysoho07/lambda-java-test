@@ -32,6 +32,12 @@
 
 *`sam-app` 디렉토리의 [README.md](./sam-app/README.md) 파일 참조*
 
+함수 자동 배포(CodeDeploy 이용)
+
+* 참고문서: [Gradual Code Deployment](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html)
+* `template.yaml` 파일을 수정 후 빌드, 배포 진행
+* 배포에 대해서는 CodeDeploy 콘솔이나 Lambda의 Application 콘솔 확인
+
 ### 발생 가능한 문제
 
 * `dockerpycreds.errors.InitializationError: docker-credential-secretservice not installed or not available in PATH` 오류 발생 시 대처 방법

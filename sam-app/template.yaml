@@ -26,6 +26,9 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+      AutoPublishAlias: operation
+      DeploymentPreference:
+        Type: Linear10PercentEvery3Minutes
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function

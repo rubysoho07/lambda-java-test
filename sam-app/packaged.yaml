@@ -27,7 +27,10 @@ Outputs:
 Resources:
   HelloWorldFunction:
     Properties:
-      CodeUri: s3://yungon-lambda-deploy-test/ac99f727d89815733eb144f1286994dd
+      AutoPublishAlias: operation
+      CodeUri: s3://yungon-lambda-deploy-test/a789c428d749078e32d374e135127969
+      DeploymentPreference:
+        Type: Linear10PercentEvery3Minutes
       Environment:
         Variables:
           PARAM1: VALUE
